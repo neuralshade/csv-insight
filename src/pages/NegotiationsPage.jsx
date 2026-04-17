@@ -8,32 +8,6 @@ const Page = styled.main`
   padding: 22px 0 40px;
 `;
 
-const Hero = styled.section`
-  display: grid;
-  gap: 10px;
-  padding: 20px;
-  margin-bottom: 18px;
-  border: 1px solid ${({ theme }) => theme.colors.line};
-  border-radius: ${({ theme }) => theme.radius.lg};
-  background:
-    radial-gradient(circle at top right, rgba(15, 118, 110, 0.14), transparent 26%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(242, 247, 255, 0.88) 100%);
-  box-shadow: ${({ theme }) => theme.shadows.card};
-`;
-
-const Title = styled.h1`
-  margin: 0;
-  font-size: clamp(1.55rem, 3vw, 2.25rem);
-`;
-
-const Description = styled.p`
-  margin: 0;
-  max-width: 64ch;
-  color: ${({ theme }) => theme.colors.muted};
-  line-height: 1.55;
-  font-size: 0.96rem;
-`;
-
 const StatsGrid = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
